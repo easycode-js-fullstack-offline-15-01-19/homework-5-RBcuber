@@ -225,10 +225,10 @@ markGreen.classList.add('green');
 
 // 5. Отсортировать li внутри списка в обратном порядке (по тексту внутри)
 
-let li = document.getElementsByTagName('li');
+let liCol = document.getElementsByTagName('li');
 let liArr = [];
 
-for (let i = 0; i < li.length; i++) {
+for (let i = 0; i < liCol.length; i++) {
     liArr.push(li[i].textContent);
 };
 
@@ -243,5 +243,5 @@ liArr.sort(function (a, b) {
 });
 
 for (let i = 0; i < liArr.length; i++) {
-    li[i].innerHTML = liArr[i];
+    liCol[i].innerHTML = liArr[i];
 };
